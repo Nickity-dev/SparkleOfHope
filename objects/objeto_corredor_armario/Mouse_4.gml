@@ -5,7 +5,7 @@ if (global.caixa_aberta) {
 
     if (_dist <= 120) {
         global.caixa_aberta = true;
-        global.caixa_texto = "Um armário velho, cheio de roupas empoeiradas.";
+        global.caixa_texto = "Uma comoda grande, tem uma chave dentro...";
     } else {
         show_debug_message("Preciso chegar mais perto!");
     }

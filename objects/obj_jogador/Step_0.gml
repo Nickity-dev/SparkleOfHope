@@ -1,29 +1,30 @@
 var _moving = false;
-var _kb_input = keyboard_check(vk_right) || keyboard_check(vk_left) || keyboard_check(vk_up) || keyboard_check(vk_down);
+var _kb_input = keyboard_check(vk_right) || keyboard_check(vk_left) || keyboard_check(vk_up) || keyboard_check(vk_down)
+            || keyboard_check(ord("D")) || keyboard_check(ord("A")) || keyboard_check(ord("W")) || keyboard_check(ord("S"));
 
 if (_kb_input) {
     has_target = false;
 }
 
-if (keyboard_check(vk_right)) {
+if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
     if (!place_meeting(x + spd, y, obj_solido)) x += spd;
     sprite_index = spr_perfil;
     image_xscale = 1;
     _moving = true;
 }
-if (keyboard_check(vk_left)) {
+if (keyboard_check(vk_left) || keyboard_check(ord("A"))) {
     if (!place_meeting(x - spd, y, obj_solido)) x -= spd;
     sprite_index = spr_perfil;
     image_xscale = -1;
     _moving = true;
 }
-if (keyboard_check(vk_up)) {
+if (keyboard_check(vk_up) || keyboard_check(ord("W"))) {
     if (!place_meeting(x, y - spd, obj_solido)) y -= spd;
     sprite_index = spr_costas;
     image_xscale = 1;
     _moving = true;
 }
-if (keyboard_check(vk_down)) {
+if (keyboard_check(vk_down) || keyboard_check(ord("S"))) {
     if (!place_meeting(x, y + spd, obj_solido)) y += spd;
     sprite_index = spr_frente;
     image_xscale = 1;
@@ -98,7 +99,6 @@ if (global.indo_para_porta) {
             room_goto(global.room_alvo);
         }
     } else {
-        // A porta-alvo não existe mais (ex: mudou de sala por outro caminho) — cancela com segurança
         global.indo_para_porta = false;
     }
 }
