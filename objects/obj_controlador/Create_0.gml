@@ -5,10 +5,8 @@ global.volume_sfx = 1;
 // Estado do painel de opções
 global.opcoes_aberta = false;
 
-// Música de fundo (comente essa parte se ainda não importou a música)
-// if (audio_exists(mus_tema)) {
-//     global.music_id = audio_play_sound(mus_tema, 1, true, global.volume_musica);
-// }
+ if (audio_exists(mus_tema)) {
+     global.music_id = audio_play_sound(mus_tema, 1, true, global.volume_musica); }
 global.caixa_aberta = false;
 global.caixa_texto = "";
 
