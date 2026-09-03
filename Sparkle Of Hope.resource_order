@@ -49,6 +49,7 @@
     {"name":"rm_cozinha","order":8,"path":"rooms/rm_cozinha/rm_cozinha.yy",},
     {"name":"rm_menu","order":4,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"mus_tema","order":9,"path":"sounds/mus_tema/mus_tema.yy",},
+    {"name":"snd_passo","order":11,"path":"sounds/snd_passo/snd_passo.yy",},
     {"name":"spr_botao_iniciar","order":1,"path":"sprites/spr_botao_iniciar/spr_botao_iniciar.yy",},
     {"name":"spr_botao_opcoes","order":3,"path":"sprites/spr_botao_opcoes/spr_botao_opcoes.yy",},
     {"name":"spr_botao_sair","order":2,"path":"sprites/spr_botao_sair/spr_botao_sair.yy",},

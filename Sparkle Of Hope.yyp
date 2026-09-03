@@ -70,6 +70,7 @@
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"mus_tema","path":"sounds/mus_tema/mus_tema.yy",},},
+    {"id":{"name":"snd_passo","path":"sounds/snd_passo/snd_passo.yy",},},
     {"id":{"name":"QuartoCeleste","path":"sprites/QuartoCeleste/QuartoCeleste.yy",},},
     {"id":{"name":"spr_botao_iniciar","path":"sprites/spr_botao_iniciar/spr_botao_iniciar.yy",},},
     {"id":{"name":"spr_botao_opcoes","path":"sprites/spr_botao_opcoes/spr_botao_opcoes.yy",},},
