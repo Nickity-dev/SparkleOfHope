@@ -83,6 +83,8 @@ y = clamp(y, floor_top, room_height - 3);
 
 last_x = x;
 last_y = y;
+show_debug_message("x=" + string(x) + " has_target=" + string(has_target) + " target_x=" + string(target_x) + " stuck=" + string(stuck_timer) + " indo_porta=" + string(global.indo_para_porta));
+
 
 if (_moving) {
     image_speed = 0.15;

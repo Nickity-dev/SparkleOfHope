@@ -26,3 +26,12 @@ if (arrastando) {
         global.volume_sfx = nivel;
     }
 }
+
+ else if (object_index == obj_slider_som) {
+    global.volume_sfx = nivel;
+
+    // NOVO: ajusta o volume do som ambiente da cozinha em tempo real, se estiver tocando
+    if (variable_global_exists("som_cozinha_id") && audio_is_playing(global.som_cozinha_id)) {
+        audio_sound_gain(global.som_cozinha_id, global.volume_sfx, 0);
+    }
+}

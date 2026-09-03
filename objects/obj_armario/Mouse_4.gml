@@ -1,3 +1,5 @@
+show_debug_message("MOUSE_53 disparou - mouse_x=" + string(mouse_x) + " mouse_y=" + string(mouse_y));
+
 if (global.caixa_aberta) {
     global.caixa_aberta = false;
 } else {
